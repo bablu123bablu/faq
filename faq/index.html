@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d76640676b.js" crossorigin="anonymous"></script>
+    <style>
+body{
+    background-color: rgb(83, 244, 8);
+    padding:40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6rem;
+}
+.accordian{
+    background-color: aliceblue;
+    padding:4px 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px blanchedalmond;
+    cursor: pointer;
+
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.icon{
+    margin-right: 16px;
+    transition: transform 0.2s ;
+
+}
+.icon.active{
+    transform:rotate(-180deg) ;
+}
+
+
+.answer{
+    color:rgb(80, 77, 77);
+    max-height: 0;
+    overflow: hidden;
+
+}
+.answer.active{
+    max-height: fit-content;
+}
+h1{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    
+<h1> बबलू भैया के बारे मे कुछ अनोखे बात
+</h1>
+<div class="accordian">
+    <div class="question">
+        <h4> बबलू भैया क्या करते है इस पे क्लिक कर के देखे
+        </h4>
+        <i class=" icon fa-sharp fa-solid fa-caret-down"></i>
+    </div>
+    <div class="answer">
+        <p>बबलू भैया एक software engineer है और एक अच्छा इंसान भी और बबलू भैया लोगो को हेल्प भी करते है और बबलू भैया  Fastdesign  private limited  company का मालिक है  और बात रहा बबलू भैया गुंडा भी है गैंगस्टर भी है बच के रहना बबलू भैया से कुछ समझ आया बेटे
+
+        </p>
+    </div>
+</div>
+
+<div class="accordian">
+    <div class="question">
+        <h4>बबलू भैया के कितने  gf  है  और कितनी लड़की  line  मे है
+        </h4>
+        <i class=" icon active  fa-sharp fa-solid fa-caret-down"></i>
+    </div>
+    <div class="answer active">
+        <p>बबलू भैया के पास कोई girlfriend नही  है बबलू भैया रंडुआ 🤣🤣🤣  है और रहे गे भी कभी भी बबलू भैया को लड़की पसंद नही है
+
+        </p>
+    </div>
+</div>
+
+<div class="accordian">
+    <div class="question">
+        <h4>BABLU BHAIYA KYA LOGO KE BAT SUNTE HAI  IS PE CLICK KR K DEKHO </h4>
+        <i class=" icon fa-sharp fa-solid fa-caret-down"></i>
+    </div>
+    <div class="answer">
+        <p>nhi bablu bhaiya kisi ke nhi sunte bablu bhaiya apne aap me khas hai bablu bhaiya ko kisi ke jrurat nhi bs bablu bhaiya gangster hai kisi ke jrurat nhi bablu bhaiya ko thik hai bsdk waloo
+        </p>
+    </div>
+</div>
+ 
+
+</body>
+<script>
+    const accordian = document.querySelectorAll('.accordian');
+
+    accordian.forEach(accordian=>{
+const icon = accordian.querySelector('.icon');
+const answer = accordian.querySelector('.answer');
+
+
+accordian.addEventListener('click',()=>{
+    icon.classList.toggle('active');
+    answer.classList.toggle('active');
+})
+
+    })
+</script>
+
+</html>
